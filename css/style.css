@@ -1,0 +1,42 @@
+.header-wrapper{
+    background-color: #ffe1e1;
+}
+.title{
+    color: #ff4f4f;
+    font-size: 20px;
+}
+
+.header-buttons{
+    font-size: 25px;
+}
+
+.menu-wrapper{
+    background-color: #fff0c1;
+}
+
+.menu-buttons ul li button{
+    font-size: 20px;
+    color: #0060B6;
+    background-color: #ffffff;
+}
+
+.menu-buttons ul li button:hover{
+    color: #00A0C6; ;
+    background-color: #ffe1ff;
+    cursor: pointer;
+}
+
+
+.tile-selector{
+    border: 3px solid  rgb(255, 41, 41);
+}
+
+.entity-selector{
+    border: 4px solid  rgb(255, 41, 41);
+}
+
+canvas {
+    border: 2px solid black;
+    display: block;
+    margin: auto;
+}

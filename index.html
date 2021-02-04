@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bounce Map Maker</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="module" src="js/script.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <div class="header">
+        <div class="title"><h1>Bounce Level Editor</h1></div>
+        <div class="header-buttons">
+          <ul>
+            <li><a title="play bounce" href="#">Play Bounce</a></li>
+            <li>
+              <a title="download JSON" href="" id="download-json"
+                >Download JSON</a
+              >
+            </li>
+            <li>
+              <a title="clear canvas" href="" id="clear-canvas">Clear Canvas</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="menu-wrapper">
+      <div class="menu">
+        <div class="menu-buttons">
+          <ul>
+            <li><button class="draw-tile">Draw Tile</button></li>
+            <li><button class="draw-entity">Draw Entity</button></li>
+          </ul>
+        </div>
+        <div class="menu-forms">
+          <div>
+            <label>No. of Rings:</label>
+            <input id="rings" type="number" />
+          </div>
+          <div>
+            <label>Ball Index X:</label>
+            <input id="starting-x" type="number" />
+            <label>Ball Index Y</label>
+            <input id="starting-y" type="number" />
+          </div>
+        </div>
+        <div class="sprites-container">
+          <div class="tiles">
+            <div class="tile-container">
+              <img id="tile-image" alt="tileset" />
+              <div class="tile-selector"></div>
+            </div>
+          </div>
+          <div class="entities">
+            <div class="entity-container">
+              <img id="entity-image" alt="tileset" />
+              <div class="entity-selector"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="middle">
+      <canvas width="960" height="576"></canvas>
+    </div>
+  </body>
+</html>
